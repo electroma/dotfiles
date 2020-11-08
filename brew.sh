@@ -21,7 +21,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
@@ -33,7 +33,7 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
@@ -52,38 +52,15 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
-
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
 brew install git
 brew install git-lfs
+brew install git-extras
+brew install git-secret
 brew install gs
+brew install htop
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
@@ -96,6 +73,45 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+# Tools of trade
+brew install asdf
+brew install awscli
+brew install ffmpeg
+brew install hugo
+brew install jq
+brew install openjdk
+brew install pass
+brew install pwgen
+brew install python3
+brew install wget
+brew install youtube-dl
+brew install zsh
+
+# Casks
+
+brew cask install adobe-acrobat-reader
+brew cask install caffeine
+brew cask install ccmenu
+brew cask install etcher
+brew cask install firefox
+brew cask install freemind
+brew cask install gimp
+brew cask install hammerspoon
+brew cask install iterm2
+brew cask install jetbrains-toolbox
+brew cask install keybase
+brew cask install pencil
+brew cask install postman
+brew cask install qbittorrent
+brew cask install shotcut
+brew cask install slack
+brew cask install teamviewer
+brew cask install virtualbox
+brew cask install visual-studio-code
+brew cask install vlc
+brew cask install whatsapp
+brew cask install zoomus
 
 # Remove outdated versions from the cellar.
 brew cleanup
